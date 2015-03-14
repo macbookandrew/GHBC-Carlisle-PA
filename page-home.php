@@ -13,6 +13,8 @@
 
 get_header(); ?>
 
+    <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow( "home", "" ); } ?>
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
