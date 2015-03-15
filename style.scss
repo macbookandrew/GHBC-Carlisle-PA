@@ -41,6 +41,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *   5.12 - Comments
  *   5.13 - Multisite
  *   5.14 - Vcards
+ *   5.15 - Misc
  * 6.0 - Sidebar
  *   6.1 - Widgets
  * 7.0 - Footer
@@ -2478,6 +2479,15 @@ footer.entry-meta {
 
 .vcard {
     address, p { margin: 0; }
+}
+
+/**
+ * 5.15 Misc
+ * ----------------------------------------------------------------------------
+ */
+
+.meteor-slides.home {
+    margin-bottom: 36px;
 }
 
 /**
