@@ -56,7 +56,7 @@ $footer-text:               #686758;
 $footer-link:               #e6402a; // footer widget links
 $copyright-background:      #F7F5E7;
 
-$tertiary-color:            #9cb2e3;
+$tertiary-color:            #9cb2e3; // body background
 
 $text-color:                #141412; // normal body text
 
@@ -69,9 +69,9 @@ $secondary-links:           #bc360a; // widget <a>, etc.
 $input-focus:               #c3c0ab;
 $placeholder-color:         #7d7b6d; // input placeholders, etc.
 
-$menu-background:           $copyright-background;
 $menu-hover-text:           #28458E; // menubar link hover text color
 $menu-hover-background:     #db572f; // menubar
+$menu-background:           $menu-hover-text;
 
 $required:                  #ed331c; // comment form
 
@@ -859,7 +859,7 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
-    background-color: $copyright-background;
+    background-color: $menu-hover-text;
 }
 
 .site-header .home-link {
@@ -893,11 +893,10 @@ img.wp-smiley,
 .logo {
     max-width: 520px;
     width: 100%;
-}
 
-@media screen and (min-width: 1069px) {
-    .logo {
+    @media screen and (min-width: 1069px) {
         margin-left: 45%;
+        margin-bottom: -45px;
     }
 }
 
@@ -927,7 +926,7 @@ div.nav-menu > ul {
 }
 
 .nav-menu li a {
-	color: $text-color;
+	color: $copyright-background;
 	display: block;
 	font-size: 15px;
 	padding: 15px 20px;
