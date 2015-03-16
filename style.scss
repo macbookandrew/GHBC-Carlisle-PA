@@ -2511,6 +2511,7 @@ footer.entry-meta {
 
 .widget {
 	background-color: rgba($menu-background, 0.7);
+    color: $copyright-background;
 	font-size: 14px;
 	hyphens: auto;
 	margin: 0 0 24px;
@@ -2541,7 +2542,7 @@ footer.entry-meta {
     }
 
     a {
-        color: $secondary-links;
+        color: $copyright-background;
 
         &:hover { color: $link-highlight; }
     }
