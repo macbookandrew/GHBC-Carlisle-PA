@@ -2515,46 +2515,40 @@ footer.entry-meta {
 .widget {
 	background-color: rgba($menu-background, 0.7);
 	font-size: 14px;
-	-webkit-hyphens: auto;
-	-moz-hyphens:    auto;
-	-ms-hyphens:     auto;
-	hyphens:         auto;
+	hyphens: auto;
 	margin: 0 0 24px;
 	padding: 20px;
 	word-wrap: break-word;
-}
 
-.widget .widget-title {
-	font: 300 italic 20px $header-font-stack-secondary;
-	margin: 0 0 10px;
-}
+    .widget-title {
+        font: 300 italic 20px $header-font-stack-secondary;
+        margin: 0 0 10px;
+    }
 
-.widget ul,
-.widget ol {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
+    ul, ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-.widget li {
-	padding: 5px 0;
-}
+    li {
+        padding: 5px 0;
 
-.widget .children li:last-child {
-	padding-bottom: 0;
-}
+        & > {
+            ol, ul { margin-left: 20px; }
+        }
+    }
 
-.widget li > ul,
-.widget li > ol {
-	margin-left: 20px;
-}
+    .children li:last-child {
+        padding-bottom: 0;
+    }
 
-.widget a {
-	color: $secondary-links;
-}
+    a {
+        color: $secondary-links;
 
-.widget a:hover {
-	color: $link-highlight;
+        &:hover { color: $link-highlight; }
+    }
+
 }
 
 /* Search widget */
