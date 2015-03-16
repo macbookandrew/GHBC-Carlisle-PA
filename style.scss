@@ -1177,11 +1177,9 @@ ul.nav-menu .focus > ul,
  */
 
 .entry-content {
-	-webkit-hyphens: auto;
-	-moz-hyphens:    auto;
-	-ms-hyphens:     auto;
-	hyphens:         auto;
+	hyphens: auto;
 	word-wrap: break-word;
+    min-height: 450px;
 }
 
 .entry-content a,
