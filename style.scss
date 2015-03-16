@@ -1014,7 +1014,7 @@ ul.nav-menu .focus > ul,
 
 .site-header .search-field {
 	background-color: transparent;
-	background-image: url(images/search-icon.png);
+	background-image: url(images/search-icon.svg);
 	background-position: 5px center;
 	background-repeat: no-repeat;
 	background-size: 24px 24px;
@@ -1024,8 +1024,7 @@ ul.nav-menu .focus > ul,
 	margin: 3px 0;
 	padding: 0 0 0 34px;
 	position: relative;
-	-webkit-transition: width 400ms ease, background 400ms ease;
-	transition:         width 400ms ease, background 400ms ease;
+	transition: width 400ms ease, background 400ms ease;
 	width: 0;
 }
 
