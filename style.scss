@@ -121,6 +121,17 @@ audio:not([controls]) {
 	display: none;
 }
 
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 html {
 	font-size: 100%;
 	overflow-y: scroll;
@@ -877,6 +888,17 @@ img.wp-smiley,
 .site-description {
 	font: 300 italic 24px $header-font-stack-secondary;
 	margin: 0;
+}
+
+.logo {
+    max-width: 520px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1069px) {
+    .logo {
+        margin-left: 45%;
+    }
 }
 
 
