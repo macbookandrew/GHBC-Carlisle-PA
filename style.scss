@@ -2518,8 +2518,13 @@ footer.entry-meta {
 	word-wrap: break-word;
 
     .widget-title {
-        font: 300 italic 20px $header-font-stack-secondary;
+        font: 700 21px $header-font-stack-main;
         margin: 0 0 10px;
+    }
+
+    h4 {
+        font: 300 italic 20px $header-font-stack-secondary;
+        margin-bottom: 0.5em;
     }
 
     ul, ol {
