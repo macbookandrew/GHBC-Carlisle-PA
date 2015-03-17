@@ -867,10 +867,11 @@ img.wp-smiley,
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
-	min-height: 230px;
 	padding: 0 20px;
 	text-decoration: none;
 	width: 100%;
+
+    @media screen and (min-width: 600px) { min-height: 230px; }
 }
 
 .site-header .site-title:hover {
@@ -894,10 +895,15 @@ img.wp-smiley,
     max-width: 420px;
     width: 100%;
 
-    @media screen and (min-width: 1069px) {
+    @media screen and (min-width: 850px) {
         margin-left: 45%;
         margin-bottom: -50px;
     }
+    @media screen and (max-width: 849px) {
+        display: block;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 600px) { width: 90% }
 }
 
 
@@ -3195,6 +3201,7 @@ h3.wpfc_grid_title a {
 		cursor: pointer;
 		display: inline-block;
 		font: bold 16px/1.3 $header-font-stack-secondary;
+        color: $copyright-background;
 		margin: 0;
 		padding: 12px 0 12px 20px;
 	}
