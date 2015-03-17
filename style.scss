@@ -61,15 +61,15 @@ $tertiary-color:            #9cb2e3; // body background
 $text-color:                #141412; // normal body text
 
 $link-color:                #ca3c08; // normal link state
-$link-highlight:            #ea9629; // link :hover state
-$link-visited:              #ac0404; // link :active, :focus states
-$page-links:                #e63f2a; // paged navigation, etc.
-$secondary-links:           #bc360a; // widget <a>, etc.
+$link-highlight:            #28458E; // link :hover state
+$link-visited:              $link-highlight; // link :active, :focus states
+$page-links:                $link-color; // paged navigation, etc.
+$secondary-links:           $link-color; // widget <a>, etc.
 
 $input-focus:               $copyright-background;
 $placeholder-color:         #7d7b6d; // input placeholders, etc.
 
-$menu-hover-text:           #28458E; // menubar link hover text color
+$menu-hover-text:           $link-highlight; // menubar link hover text color
 $menu-hover-background:     #db572f; // menubar
 $menu-background:           $menu-hover-text;
 
