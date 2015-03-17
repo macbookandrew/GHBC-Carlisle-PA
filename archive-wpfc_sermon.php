@@ -21,20 +21,17 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
+        <?php
+            $sermon_settings = get_option('wpfc_options');
+            $archive_title = $sermon_settings['archive_title'];
+            if(empty($archive_title)):
+                $archive_title = 'Sermons';
+            endif;
+        ?>
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
-				<h1 class="archive-title"><?php
-					if ( is_day() ) :
-						printf( __( 'Daily Archives: %s', 'twentythirteen' ), get_the_date() );
-					elseif ( is_month() ) :
-						printf( __( 'Monthly Archives: %s', 'twentythirteen' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentythirteen' ) ) );
-					elseif ( is_year() ) :
-						printf( __( 'Yearly Archives: %s', 'twentythirteen' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentythirteen' ) ) );
-					else :
-						_e( 'Archives', 'twentythirteen' );
-					endif;
-				?></h1>
+				<h1 class="archive-title"><?php echo $archive_title; ?></h1>
 			</header><!-- .archive-header -->
 
 			<?php /* The loop */ ?>
