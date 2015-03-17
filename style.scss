@@ -503,9 +503,8 @@ ins {
 }
 
 hr {
-	background: url(images/dotted-line.png) repeat center top;
-	background-size: 4px 4px;
-	border: 0;
+    background-color: rgba($menu-background, 0.7);
+    border: 0;
 	height: 1px;
 	margin: 0 0 24px;
 }
