@@ -2119,11 +2119,13 @@ footer.entry-meta {
 	width: 100%;
 }
 
-.sidebar .page-content {
-	margin: 0 auto;
-	max-width: 1040px;
-	padding: 40px 376px 40px 60px;
-    min-height: 450px;
+.sidebar {
+    .page-content {
+        margin: 0 auto;
+        max-width: 1040px;
+        padding: 40px 376px 40px 60px;
+    }
+    .page-content, .entry-content { min-height: 450px; }
 }
 
 
