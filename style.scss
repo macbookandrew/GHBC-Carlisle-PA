@@ -1049,7 +1049,8 @@ ul.nav-menu .focus > ul,
 .entry-header,
 .entry-content,
 .entry-summary,
-.entry-meta {
+.entry-meta,
+.archive-header {
 	margin: 0 auto;
 	max-width: 604px;
 	width: 100%;
@@ -1058,7 +1059,8 @@ ul.nav-menu .focus > ul,
 .sidebar .entry-header,
 .sidebar .entry-content,
 .sidebar .entry-summary,
-.sidebar .entry-meta {
+.sidebar .entry-meta,
+.sidebar .archive-header {
 	max-width: 1040px;
 	padding: 0 376px 0 60px;
 }
