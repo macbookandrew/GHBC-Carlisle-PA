@@ -52,26 +52,27 @@ $dark-gray:                 #333333;
 $almost-black:              #210d10; // quote post format background
 $black:                     #000000;
 
-$footer-text:               #686758;
-$footer-link:               #e6402a; // footer widget links
-$copyright-background:      #F7F5E7;
+$primary-color:             #28458E;
+$secondary-color:           #F7F5E7; // body background, etc.
 
-$tertiary-color:            $copyright-background; // body background
+$footer-text:               $secondary-color;
+$footer-link:               #e6402a; // footer widget links
+$copyright-background:      $primary-color;
 
 $text-color:                #141412; // normal body text
 
 $link-color:                #ca3c08; // normal link state
-$link-highlight:            #28458E; // link :hover state
-$link-visited:              $link-highlight; // link :active, :focus states
+$link-highlight:            $primary-color; // link :hover state
+$link-visited:              $primary-color; // link :active, :focus states
 $page-links:                $link-color; // paged navigation, etc.
 $secondary-links:           $link-color; // widget <a>, etc.
 
-$input-focus:               $copyright-background;
+$input-focus:               $secondary-color;
 $placeholder-color:         #7d7b6d; // input placeholders, etc.
 
-$menu-hover-text:           $link-highlight; // menubar link hover text color
+$menu-hover-text:           $primary-color; // menubar link hover text color
 $menu-hover-background:     #db572f; // menubar
-$menu-background:           $menu-hover-text;
+$menu-background:           $primary-color;
 
 $required:                  #ed331c; // comment form
 
@@ -824,7 +825,7 @@ img.wp-smiley,
  */
 
 .site {
-	background-color: $tertiary-color;
+	background-color: $secondary-color;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -933,7 +934,7 @@ div.nav-menu > ul {
 }
 
 .nav-menu li a {
-	color: $copyright-background;
+	color: $secondary-color;
 	display: block;
 	font-size: 15px;
 	padding: 15px 20px;
@@ -1791,7 +1792,7 @@ footer.entry-meta {
  */
 
 .attachment .hentry {
-	background-color: $copyright-background;
+	background-color: $secondary-color;
 	margin: 0;
 	padding: 0;
 }
@@ -1951,7 +1952,7 @@ footer.entry-meta {
 }
 
 .paging-navigation {
-	background-color: $copyright-background;
+	background-color: $secondary-color;
 	padding: 40px 0;
 }
 
@@ -2149,7 +2150,7 @@ footer.entry-meta {
 }
 
 .error404 .page-title:before {
-	color: $copyright-background;
+	color: $secondary-color;
 	content: "\f423";
 	font-size: 964px;
 	line-height: 0.6;
@@ -2160,7 +2161,7 @@ footer.entry-meta {
 }
 
 .error404 .page-wrapper {
-	background-color: $copyright-background;
+	background-color: $secondary-color;
 }
 
 .error404 .page-header,
@@ -2794,7 +2795,7 @@ h3.wpfc_grid_title a {
 
 .widget {
 	background-color: $menu-hover-text;
-    color: $copyright-background;
+    color: $secondary-color;
 	font-size: 14px;
 	hyphens: auto;
 	margin: 0 0 24px;
@@ -2830,7 +2831,7 @@ h3.wpfc_grid_title a {
     }
 
     a {
-        color: $copyright-background;
+        color: $secondary-color;
 
         &:hover { color: $link-highlight; }
     }
@@ -3202,7 +3203,7 @@ h3.wpfc_grid_title a {
 		cursor: pointer;
 		display: inline-block;
 		font: bold 16px/1.3 $header-font-stack-secondary;
-        color: $copyright-background;
+        color: $secondary-color;
 		margin: 0;
 		padding: 12px 0 12px 20px;
 	}
