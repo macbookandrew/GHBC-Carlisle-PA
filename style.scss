@@ -894,10 +894,11 @@ img.wp-smiley,
 .logo {
     max-width: 420px;
     width: 100%;
+    margin-top: 5px;
 
     @media screen and (min-width: 850px) {
-        margin-left: 45%;
-        margin-bottom: -50px;
+        margin-left: 50%;
+        margin-bottom: -40px;
     }
     @media screen and (max-width: 849px) {
         display: block;
