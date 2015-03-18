@@ -2127,7 +2127,9 @@ footer.entry-meta {
         max-width: 1040px;
         padding: 40px 376px 40px 60px;
     }
-    .page-content, .entry-content { min-height: 450px; }
+    @media screen and (min-width: 1000px) {
+        .page-content, .entry-content { min-height: 450px; }
+    }
 }
 
 
@@ -3129,7 +3131,7 @@ h3.wpfc_grid_title a {
 		margin: 0 auto;
 		max-width: 604px;
 		position: relative;
-		top: 20px;
+		top: 0;
 	}
 
 	.site-main .widget-area {
