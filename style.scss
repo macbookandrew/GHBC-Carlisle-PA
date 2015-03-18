@@ -56,7 +56,7 @@ $footer-text:               #686758;
 $footer-link:               #e6402a; // footer widget links
 $copyright-background:      #F7F5E7;
 
-$tertiary-color:            #9cb2e3; // body background
+$tertiary-color:            $copyright-background; // body background
 
 $text-color:                #141412; // normal body text
 
@@ -2492,7 +2492,7 @@ footer.entry-meta {
 
 .meteor-slides.home {
     margin-bottom: 36px;
-    border: 2px solid $copyright-background;
+    border: 2px solid $menu-hover-text;
 }
 
 .wpfc_sermon {
@@ -2792,7 +2792,7 @@ h3.wpfc_grid_title a {
  */
 
 .widget {
-	background-color: rgba($menu-background, 0.7);
+	background-color: $menu-hover-text;
     color: $copyright-background;
 	font-size: 14px;
 	hyphens: auto;
