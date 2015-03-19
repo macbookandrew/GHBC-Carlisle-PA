@@ -20,8 +20,20 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
-				<h1 class="archive-title"><?php echo get_queried_object()->name; ?></h1>
+				<h1 class="archive-title">Sermons Series: <?php echo single_cat_title( '', false ); ?></h1>
+                <?php render_wpfc_sorting(); ?>
 			</header><!-- .archive-header -->
+
+            <div id="wpfc_sermon_tax_description">
+            <?php
+                /* Image */
+                print apply_filters( 'sermon-images-queried-term-image', '', array( 'attr' => array( 'class' => 'alignleft' ), 'after' => '</div>', 'before' => '<div id="wpfc_sermon_image">', 'image_size' => 'thumbnail', ) );
+                /* Description */
+                $category_description = category_description();
+                if ( ! empty( $category_description ) )
+                    echo '<div class="archive-meta">' . $category_description . '</div>';
+            ?>
+            </div>
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
