@@ -32,6 +32,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
 				<h1 class="archive-title"><?php echo $archive_title; ?></h1>
+                <?php render_wpfc_sorting(); ?>
 			</header><!-- .archive-header -->
 
 			<?php /* The loop */ ?>
