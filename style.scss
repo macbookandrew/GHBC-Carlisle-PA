@@ -840,6 +840,8 @@ img.wp-smiley,
 	top: 40px;
 	width: 100%;
 	z-index: 1;
+
+    .home & { top: 306px; }
 }
 
 .site-main .sidebar-inner {
@@ -1071,6 +1073,14 @@ ul.nav-menu .focus > ul,
 .sidebar .archive-header {
 	max-width: 1040px;
 	padding: 0 376px 0 60px;
+}
+
+.slides-home-container {
+    margin: 40px auto 0;
+    max-width: 1040px;
+
+    @media screen and (min-width: 600px) { padding-left: 60px; }
+    @media screen and (max-width: 1069px) and (min-width: 600px) { padding-right: 60px; }
 }
 
 
@@ -2494,11 +2504,6 @@ footer.entry-meta {
  * ----------------------------------------------------------------------------
  */
 
-.meteor-slides.home {
-    margin-bottom: 36px;
-    border: 2px solid $menu-hover-text;
-}
-
 .wpfc_sermon {
     .entry {
         &-header { margin-bottom: 0; }
@@ -3131,7 +3136,8 @@ h3.wpfc_grid_title a {
 		margin: 0 auto;
 		max-width: 604px;
 		position: relative;
-		top: 0;
+
+		&, .home & { top: 0; }
 	}
 
 	.site-main .widget-area {
