@@ -2620,7 +2620,7 @@ footer.entry-meta {
 
     li {
         padding-left: 18px!important;
-        background: url(icons/mic-icon.png) no-repeat left;
+        background: url(images/icons/mic-icon.png) no-repeat left;
         list-style: none!important;
         margin: 0px 0 6px;
         line-height: 1.1em;
@@ -2697,31 +2697,31 @@ footer.entry-meta {
 	display: block;
 
     &[href$='.ppt'], &[href$='.pptx'] {
-        background:url(icons/ppt.png) no-repeat center left;
+        background:url(images/icons/ppt.png) no-repeat center left;
         padding-left:20px;
         height: 16px;
         line-height: 16px;
     }
     &[href$='.doc'], &[href$='.rtf'], &[href$='.docx']  {
-        background:url(icons/word.png) no-repeat center left;
+        background:url(images/icons/word.png) no-repeat center left;
         padding-left:20px;
         height: 16px;
         line-height: 16px;
     }
     &[href$='.pdf'], a.sermon-notes {
-        background:url(icons/pdf.png) no-repeat center left;
+        background:url(images/icons/pdf.png) no-repeat center left;
         padding-left:20px;
         height: 16px;
         line-height: 16px;
     }
     &[href$='.mp3'] {
-        background:url(icons/audio.png) no-repeat center left;
+        background:url(images/icons/audio.png) no-repeat center left;
         padding-left:20px;
         height: 16px;
         line-height: 16px;
     }
     &[href$='.mp4'] {
-        background:url(icons/video.png) no-repeat center left;
+        background:url(images/icons/video.png) no-repeat center left;
         padding-left:20px;
         height: 16px;
         line-height: 16px;
