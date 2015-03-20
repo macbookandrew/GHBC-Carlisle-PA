@@ -2504,6 +2504,10 @@ footer.entry-meta {
  * ----------------------------------------------------------------------------
  */
 
+@media screen and (max-width: 400px) {
+    .home #attachment_52 { max-width: 150px; }
+}
+
 .wpfc_sermon {
     .entry {
         &-header { margin-bottom: 0; }
