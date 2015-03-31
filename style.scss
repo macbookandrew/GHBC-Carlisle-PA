@@ -3220,6 +3220,20 @@ h3.wpfc_grid_title a {
             &:before { content: '('; }
             &:after { content: ')'; }
         }
+
+        #events_wrap table.ical .event:hover div.details2 {
+            color: inherit;
+            background: none;
+            display: inherit;
+            position: inherit;
+            margin: inherit;
+            padding: 0;
+            width: inherit;
+            z-index: 100;
+            border: inherit;
+            overflow: inherit;
+            border: none;
+        }
     }
 }
 
