@@ -15,3 +15,15 @@ add_action( 'wp_print_styles', 'add_custom_css' );
 
 include('functions-branding.php');
 include('functions-church.php');
+
+// strip sidebar class from body_class when using full-width page template
+add_filter('body_class', 'remove_full_width_body_class', 20, 2);
+
+function remove_full_width_body_class( $wp_classes ) {
+    if( is_page_template('page-no-sidebar.php') ) {
+        foreach($wp_classes as $key => $value) {
+            if ($value == 'sidebar') unset( $wp_classes[$key] );
+        }
+    }
+    return $wp_classes;
+}
