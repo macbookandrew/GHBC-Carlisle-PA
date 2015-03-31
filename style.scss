@@ -2526,9 +2526,11 @@ footer.entry-meta {
 }
 
 .calendar_navigation input {
-    padding: .3em 1em;
-    margin: 0 1em;
-    border: none;
+    &, &:active, &:hover, &:focus {
+        padding: .3em 1em;
+        margin: 0 1em;
+        border: none;
+    }
 }
 
 /* Sermon Manager CSS http://www.wpforchurch.com/products/sermon-manager-for-wordpress/ */
