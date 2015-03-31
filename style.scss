@@ -2520,6 +2520,17 @@ footer.entry-meta {
     display: none;
 }
 
+.largecalendar caption {
+    font-size: 28px;
+    text-align: center;
+}
+
+.calendar_navigation input {
+    padding: .3em 1em;
+    margin: 0 1em;
+    border: none;
+}
+
 /* Sermon Manager CSS http://www.wpforchurch.com/products/sermon-manager-for-wordpress/ */
 
 .single-wpfc_sermon .wpfc_sermon_image {
@@ -3182,6 +3193,32 @@ h3.wpfc_grid_title a {
 	.gallery-caption {
 		display: none;
 	}
+}
+
+@media (max-width: 750px) {
+    .largecalendar {
+        thead,
+        td:not(.hasevents) { display: none; }
+
+        tr { display: block; }
+
+        .hasevents {
+            display: block;
+            width: 100% !important;
+            height: auto !important;
+            overflow: visible;
+        }
+
+        .details1,
+        .details2 { display: inline !important; }
+
+        .details1 { font-weight: 700; }
+
+        .details2 {
+            &:before { content: '('; }
+            &:after { content: ')'; }
+        }
+    }
 }
 
 @media (max-width: 643px) {
