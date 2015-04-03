@@ -2528,7 +2528,9 @@ footer.entry-meta {
     }
 
     &.agenda {
-        padding-bottom: 150%;
+        padding-bottom: 0;
+        height: 300px;
+        margin: 0 8%;
         @media (min-width: 750px) { display: none; }
     }
 }
