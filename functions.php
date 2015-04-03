@@ -27,3 +27,17 @@ function remove_full_width_body_class( $wp_classes ) {
     }
     return $wp_classes;
 }
+
+// manually specify AMR date localization
+function amr_format_date( $format, $datestamp ) { /* want a  integer timestamp or a date object  */
+    global 	$amr_options,
+            $amr_globaltz;
+
+    $method = 'wp';  // v4.0.9 was none
+
+	date_timezone_set ($datestamp, $amr_globaltz);  /* Converting here, but then some derivations wrong eg: unsetting of end date */
+
+	if (isset($_GET['tzdebug'])) echo  '<br />'.$datestamp->format('c');
+
+    return amr_wp_format_date ( $format, $datestamp, false);
+}
