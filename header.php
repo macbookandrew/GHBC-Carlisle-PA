@@ -36,7 +36,7 @@
 			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 			    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" class="logo" title="Great Hope Baptist Church Carlisle, PA" alt="Great Hope Baptist Church Carlisle, PA logo" data-no-retina />
 				<h1 class="visuallyhidden site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="visuallyhidden site-description"><?php bloginfo( 'description' ); ?></h2>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</a>
 
 			<div id="navbar" class="navbar">
