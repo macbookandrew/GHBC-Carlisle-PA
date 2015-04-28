@@ -11,7 +11,7 @@
 	function login_css() {
 		echo "<style type=\"text/css\" media=\"screen\">
 		#login h1 a {
-			background: url('" . get_bloginfo( 'stylesheet_directory' ) . "/images/logo.svg') center / contain no-repeat;
+			background: #28458e url('" . get_bloginfo( 'stylesheet_directory' ) . "/images/logo.svg') center / contain no-repeat;
 			width: 390px;
 			height: 267px;
 			margin-left: -40px;
